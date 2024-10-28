@@ -1,0 +1,115 @@
+/* styles.css */
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #003d7a;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Définit la police du texte */
+    background-color: var(--background-color); /* Couleur de fond de la page */
+    color: var(--text-color); /* Couleur du texte */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 20px; /* Ajoute du padding autour du contenu */
+}
+
+h1 {
+    color: var(--primary-color); /* Couleur du titre */
+    text-align: center; /* Centre le titre */
+    margin-bottom: 40px; /* Espace en dessous du titre */
+}
+
+p {
+    font-size: 18px; /* Taille de la police pour les paragraphes */
+    margin: 20px 0; /* Espace au-dessus et au-dessous des paragraphes */
+}
+
+a {
+    color: var(--primary-color); /* Couleur des liens */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+img {
+    max-width: 100%; /* L'image prend la largeur maximale de son conteneur */
+    height: auto; /* Maintient le ratio d'aspect de l'image */
+}
+
+figure {
+    display: block; /* Permet de centrer l'image et la légende */
+    margin: 0 auto; /* Centre le figure */
+    text-align: center; /* Centre le texte à l'intérieur du figure */
+    margin-top: 40px; /* Espace au-dessus de l'image */
+    margin-bottom: 40px; /* Espace en dessous de l'image */
+}
+
+figure img {
+    display: block; /* L'image est un bloc */
+    margin: 0 auto; /* Centre l'image */
+}
+
+figure figcaption {
+    margin-top: 10px; /* Espace au-dessus de la légende */
+}
+
+h2 {
+    text-align: left; /* Aligne le titre de la liste à gauche */
+    margin-top: 40px; /* Espace au-dessus du titre de la liste */
+}
+
+ul {
+    list-style-position: inside; /* Permet de placer les puces à l'intérieur */
+    padding-left: 0; /* Supprime le padding à gauche */
+}
+
+ul li {
+    text-align: left; /* Aligne le texte de la liste à gauche */
+}
+
+blockquote {
+    margin-top: 20px; /* Ajoute de l'espace au-dessus de la citation */
+}
+
+.surprise-button {
+    background-color: var(--primary-color); /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px 20px; /* Espace intérieur */
+    font-size: 18px; /* Taille de la police */
+    cursor: pointer; /* Changer le curseur au survol */
+    transition: background-color 0.3s; /* Effet de transition */
+}
+
+.surprise-button:hover {
+    background-color: var(--secondary-color); /* Couleur au survol */
+}
+
+.image-surprise {
+    text-align: center; /* Centre le contenu */
+    margin-top: 20px; /* Espace au-dessus de l'image */
+}
+
+.image-surprise p {
+    font-size: 18px; /* Taille de la police pour le texte */
+    color: var(--text-color); /* Couleur du texte */
+}
+
+/* Ajout d'une requête de média pour les petits écrans */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px; /* Taille de la police du titre pour les petits écrans */
+    }
+
+    p, .image-surprise p {
+        font-size: 16px; /* Taille de la police pour les petits écrans */
+    }
+
+    .surprise-button {
+        width: 100%; /* Bouton plein écran */
+    }
+}
